@@ -1,0 +1,31 @@
+Name: maui-release
+Summary: "%{release_name} release files"
+Version: 2014.1
+Release: 1
+Group: System/Base
+License: GPLv2
+URL: http://www.maui-project.org/
+Description: "%{release_name} release files such as various /etc/ files that define the release."
+
+Provides:
+    - system-release = %{version}-%{release}
+    - moblin-release = 2.2
+    - meego-release  = 1.3
+    - mer-release
+Obsoletes:
+    - moblin-release <= 2.1.92-4.6
+    - meego-release <= 1.2.90
+    - mer-release
+Configure: none
+Builder: none
+BuildArch: noarch
+NoSetup: yes
+Files:
+    - "%config %attr(0644,root,root) %{_sysconfdir}/mer-release"
+    - "%config %attr(0644,root,root) %{_sysconfdir}/os-release"
+    - "%{_sysconfdir}/system-release"
+    - "%{_sysconfdir}/moblin-release"
+    - "%{_sysconfdir}/meego-release"
+    - "%config(noreplace) %attr(0644,root,root) %{_sysconfdir}/issue"
+    - "%config(noreplace) %attr(0644,root,root) %{_sysconfdir}/issue.net"
+#    - "%{_sysconfdir}/pki/rpm-gpg"
