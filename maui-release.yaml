@@ -1,7 +1,7 @@
 Name: maui-release
 Summary: "%{release_name} release files"
 Version: 2014.1
-Release: 1
+Release: 2
 Group: System/Base
 License: GPLv2
 URL: http://www.maui-project.org/

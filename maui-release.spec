@@ -11,7 +11,7 @@ Name:       maui-release
 
 Summary:    %{release_name} release files
 Version:    2014.1
-Release:    1
+Release:    2
 Group:      System/Base
 License:    GPLv2
 BuildArch:  noarch
@@ -51,7 +51,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 echo "%{release_name} release %{version} (%{release_name})" > $RPM_BUILD_ROOT%{_sysconfdir}/mer-release
 cp -p $RPM_BUILD_ROOT%{_sysconfdir}/mer-release $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
-echo "Kernel \r on an \m" >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
+echo "Kernel \r on an \m (\l)" >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 cp -p $RPM_BUILD_ROOT%{_sysconfdir}/issue $RPM_BUILD_ROOT%{_sysconfdir}/issue.net
 echo >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
