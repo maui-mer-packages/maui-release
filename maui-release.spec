@@ -10,7 +10,7 @@ Name:       maui-release
 # << macros
 
 Summary:    %{release_name} release files
-Version:    2014.4
+Version:    2014.5
 Release:    1
 Group:      System/Base
 License:    GPLv2
